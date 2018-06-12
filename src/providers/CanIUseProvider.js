@@ -251,6 +251,15 @@ const CanIUseProvider: Array<Node> = [
     object: 'URLSearchParams',
     isValid,
     getUnsupportedTargets
+  },
+  // Array
+  {
+    id: 'forEach',
+    ASTNodeType: 'MemberExpression',
+    object: 'Array',
+    property: 'forEach',
+    isValid,
+    getUnsupportedTargets
   }
 ];
 
